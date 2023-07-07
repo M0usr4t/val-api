@@ -61,22 +61,22 @@ export const HomePage = () => {
             <>
                 {agents !== null &&
                     <div className='agents-section-wrapper'> 
-                    <div className='agents-info-container'>
-                        <div className='for-centering'>
-                            <h1 className='agents-header'> YOUR AGENTS </h1>
-                            <h2 className='create'> Unleash the power of your creativity </h2>
-                            <p className='agents-description'> 
-                                Beyond mere guns and bullets, 
-                                you have the privilege<br />to select an extraordinary agent equipped with adaptive, <br />
-                                lightning-fast, and deadly abilities. 
-                                These remarkable skills<br /> pave the way for thrilling opportunities, 
-                                allowing your <br /> gunplay to truly shine.
-                                </p>
-                            <Link to='/agents' className='agents-link'>
-                                View All Agents
-                            </Link>
+                        <div className='agents-info-container'>
+                            <div className='for-centering'>
+                                <h1 className='agents-header'> YOUR AGENTS </h1>
+                                <h2 className='create'> Unleash the power of your creativity </h2>
+                                <p className='agents-description'> 
+                                    Beyond mere guns and bullets, 
+                                    you have the privilegeto select an extraordinary agent equipped with adaptive, 
+                                    lightning-fast, and deadly abilities. 
+                                    These remarkable skills pave the way for thrilling opportunities, 
+                                    allowing your gunplay to truly shine.
+                                    </p>
+                                <Link to='/agents' className='agents-link'>
+                                    View All Agents
+                                </Link>
+                            </div>
                         </div>
-                    </div>
                         <div className='image-container'>
                                 <Image className="sage-image" src={agents[getAgent('Sage')].bustPortrait} />                            
                                 <Image className="viper-image" src={agents[getAgent('Viper')].bustPortrait} />
@@ -91,10 +91,10 @@ export const HomePage = () => {
                     <div className='maps-info-container'>
                         <div className='for-centering'>
                             <h1 className='maps-header'> YOUR MAPS</h1>
-                            <h2 className='create'>Unleash your skills and<br /> conquer the globe!</h2>
+                            <h2 className='create'>Unleash your skills and conquer the globe!</h2>
                             <p className='maps-description'>
-                            The battlegrounds are your canvas, ready to witness your<br /> boundless creativity. 
-                            These meticulously crafted maps serve<br /> as the ultimate playground, where team strategies soar,<br /> 
+                            The battlegrounds are your canvas, ready to witness you boundless creativity. 
+                            These meticulously crafted maps serve as the ultimate playground, where team strategies soar,
                             and breathtaking moments unfold.
                             </p>
                             <Link to='/maps' className='agents-link'>View all maps</Link>
@@ -112,10 +112,10 @@ export const HomePage = () => {
                     <div className='arsenal-info-container'>
                         <div className='for-centering'>
                             <h1 className='arsenal-header'> YOUR ARSENAL</h1>
-                            <h2 className='create'>Unleash unerring precision and<br />ascend to the pinnacle of tactical mastery</h2>
+                            <h2 className='create'>Unleash unerring precision and ascend to the pinnacle of tactical mastery</h2>
                             <p className='arsenal-description'>
-                            Your arsenal is a symphony of destruction, meticulously designed to empower<br /> your strategic brilliance. 
-                            Each weapon is a testament to precision, power,<br /> and adaptability, offering a wealth of possibilities 
+                            Your arsenal is a symphony of destruction, meticulously designed to empower your strategic brilliance. 
+                            Each weapon is a testament to precision, power, and adaptability, offering a wealth of possibilities 
                             to explore your creativity. 
                             </p>
                             <Link to='/arsenal' className='agents-link'>View aresenal</Link>

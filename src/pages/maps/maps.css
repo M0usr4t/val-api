@@ -57,6 +57,13 @@ body, html {
     text-decoration: line-through;
     color:#FA4455;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    @media (max-width: 768px) {
+      font-size: 40px; /* Font size for smaller screens */
+    }
+  
+    @media (max-width: 480px) {
+      font-size: 25px; /* Font size for even smaller screens */
+    }
   }
   
   .map-coordinates {
@@ -81,6 +88,15 @@ body, html {
     align-items: center;
     text-decoration: none;
     position: relative;
+    cursor: crosshair; 
+    
+    @media (max-width: 768px) {
+      height: 30px; /* Font size for smaller screens */
+    }
+  
+    @media (max-width: 480px) {
+      height: 20px; /* Font size for even smaller screens */
+    }
   }
   
   .map-image {
@@ -132,6 +148,7 @@ body, html {
     color: white;
     background-color: transparent;
     border: none; 
+    cursor: crosshair;
   }
   
   

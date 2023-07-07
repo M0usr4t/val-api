@@ -22,16 +22,19 @@ h1{
 }
 ul{
     margin-right: 2%;
+   
 }
 ul li {
     display:inline-block;
     font-family:'CustomFont', sans-serif;
     margin: 5px;
+   
 }
 .link {
     font-family:'CustomFont', sans-serif;
     text-decoration: none; 
     color: white; 
+    cursor: crosshair;
 }
 
 .link-active {

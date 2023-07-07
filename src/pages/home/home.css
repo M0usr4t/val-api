@@ -45,6 +45,13 @@
     font-family: 'CustomFont', sans-serif;
     font-size: 150px; 
     color:white;
+    @media (max-width: 768px) {
+      font-size: 100px; /* Font size for smaller screens */
+    }
+  
+    @media (max-width: 500px) {
+      font-size: 75px; /* Font size for even smaller screens */
+    }
 }
 .game-description{
     font-family: 'CustomFont', sans-serif;
@@ -67,6 +74,7 @@
     align-items: center;
     text-decoration: none;
     position: relative;
+    cursor: crosshair;
 }
 .download-link:hover,.agents-link:hover {
   background-color: #FA4454;
@@ -99,11 +107,11 @@
     position: relative;
 }
 .agents-info-container, .maps-info-container, .arsenal-info-container{
-  width:60%;
+  width:50%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items:flex-end;
+  align-items:center;
   text-align: center;
   justify-content: center;
   position: relative;
@@ -128,23 +136,51 @@
   font-family: 'CustomFont', sans-serif;
   font-size: 75px; 
   color:#FA4454;
+  
+  @media (max-width: 768px) {
+    font-size: 60px; /* Font size for smaller screens */
+  }
+
+  @media (max-width: 500px) {
+    font-size: 50px; /* Font size for even smaller screens */
+  }
 }
+
 .create{
   font-family: 'Tungsten-Bold',arial,georgia,sans-serif;;
   font-weight: bold;
   color:white;
+  margin-left: 25%;
+  margin-right: 25%;
+  @media (max-width: 768px) {
+    font-size: 30px; /* Font size for smaller screens */
+  }
+
+  @media (max-width: 500px) {
+    font-size: 20px; /* Font size for even smaller screens */
+  }
 }
 .agents-description, .maps-description, .arsenal-description{
   font-family: 'Tungsten-Bold',arial,georgia,sans-serif;;
   font-size: 14px;
   color:white;
+
+  @media (max-width: 768px) {
+    font-size: 16px; /* Font size for smaller screens */
+  }
+
+  @media (max-width: 500px) {
+    font-size: 8px; /* Font size for even smaller screens */
+  }
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 .image-container{
     display:flex;
     align-items: center;
-    justify-content:flex-start;
-    width: 100%; 
+    justify-content:center;
+    width: 50%; 
     height: 100%; 
     overflow: hidden;
     position: relative;
@@ -157,28 +193,28 @@
   }
   
   .sage-image {
-    margin-left: calc(50% + -590px);
+    margin-left: calc(50% + -55%);
   }
   
   .viper-image {
-    margin-left: calc(50% + -480px);
+    margin-left: calc(50% + -24%);
     z-index: 1;
   }
   
   .reyna-image {
-    margin-left: calc(50% + -330px);
+    margin-left: calc(50% + 10%);
   }
 
   .maps-info-container{
-    width: 70%;
+    width: 50%;
     align-items:center;
   }
 
   .breeze-image-container{
     display:flex;
     align-items: center;
-    justify-content:flex-start;
-    max-width: 80%; 
+    justify-content:center;
+    max-width: 50%; 
     height: 100%; 
     overflow: hidden;
     position: relative;
@@ -191,11 +227,7 @@
   .gun-image{
     width: 70%;
   }
-  .arsenal-info-container{
-    align-items:center;
-    max-width:512px;
-    max-height: 104px;
-  }
+
 
   .guns-image-container{
     display:flex;

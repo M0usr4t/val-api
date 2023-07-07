@@ -85,19 +85,20 @@ body, html {
 .portrait-description-wrapper{
   display:flex;
   gap: 1em;
+  
 }
 
 .agent-portrait-container{
+  display: flex;
   position: relative;
   width: 1500px; 
   height: 500px; 
 }
 
 .agent-background-container {
-  position:absolute;
+  
   width: 100%;
   height: 100%;
- 
 }
 .agent-background-image{
   height:100%;
