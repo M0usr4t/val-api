@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../../fonts/ValorantFont.ttf') format('truetype');
+  }
+  body, html {
+    background-color: #14171A;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("../../images/background.jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+.home-page {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction:column;
+    overflow-x: hidden;
+}
+.page-header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+.game-info{
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.val-gif{
+    width:100vw;
+    position: relative;
+    top: -4px;
+}
+.game-title{
+    font-family: 'CustomFont', sans-serif;
+    font-size: 150px; 
+    color:white;
+}
+.game-description{
+    font-family: 'CustomFont', sans-serif;
+    color:white;   
+}
+
+.download-link, .agents-link{
+    font-family: 'Tungsten-Bold',arial,georgia,sans-serif;;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    background-color: #FA4454;
+    color: #FFF;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 1;
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+}
+.download-link:hover,.agents-link:hover {
+  background-color: #FA4454;
+}
+.download-link::before,.agents-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1C252E; 
+  transform: scaleX(0); 
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+  z-index: -1;
+  border-radius: 10px;
+}
+.download-link:hover::before,.agents-link:hover::before{
+  transform: scaleX(1); 
+}
+
+.agents-section-wrapper, .maps-section-wrapper, .arsenal-section-wrapper{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    width: 100vw;
+    position: relative;
+}
+.agents-info-container, .maps-info-container, .arsenal-info-container{
+  width:60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+}
+.agents-section-wrapper::before, .maps-section-wrapper::before, .arsenal-section-wrapper::before{
+  content: "";
+  position: absolute;
+  width: 80%; 
+  height: 100%;
+  background-color: rgba(14, 13, 13, 0.578);
+  transform: skewX(-20deg); 
+  z-index: 0;
+}
+.for-centering{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.agents-header, .maps-header, .arsenal-header{
+  font-family: 'CustomFont', sans-serif;
+  font-size: 75px; 
+  color:#FA4454;
+}
+.create{
+  font-family: 'Tungsten-Bold',arial,georgia,sans-serif;;
+  font-weight: bold;
+  color:white;
+}
+.agents-description, .maps-description, .arsenal-description{
+  font-family: 'Tungsten-Bold',arial,georgia,sans-serif;;
+  font-size: 14px;
+  color:white;
+}
+
+.image-container{
+    display:flex;
+    align-items: center;
+    justify-content:flex-start;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden;
+    position: relative;
+}
+
+.sage-image, .viper-image, .reyna-image {
+    position: absolute;
+    max-height: 80%;
+    max-width: 100%;
+  }
+  
+  .sage-image {
+    margin-left: calc(50% + -590px);
+  }
+  
+  .viper-image {
+    margin-left: calc(50% + -480px);
+    z-index: 1;
+  }
+  
+  .reyna-image {
+    margin-left: calc(50% + -330px);
+  }
+
+  .maps-info-container{
+    width: 70%;
+    align-items:center;
+  }
+
+  .breeze-image-container{
+    display:flex;
+    align-items: center;
+    justify-content:flex-start;
+    max-width: 80%; 
+    height: 100%; 
+    overflow: hidden;
+    position: relative;
+    clip-path: polygon(0 35%, 100% 0, 100% 65%,  0 100%);
+  }
+
+  .breeze-image{
+    width:98%;
+  }
+  .gun-image{
+    width: 70%;
+  }
+  .arsenal-info-container{
+    align-items:center;
+    max-width:512px;
+    max-height: 104px;
+  }
+
+  .guns-image-container{
+    display:flex;
+    flex-direction: column;
+    z-index: 1;
+    width: 50%;
+    overflow: hidden;
+    align-items: center;
+  }

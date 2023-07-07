@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url('../../fonts/ValorantFont.ttf') format('truetype');
+}
+
+body, html {
+  background-color: #14171A;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("../../images/background.jpg");
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.agents-page{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.agents-selection-container{
+  display: flex;
+}
+.agents-display-container{
+    display: flex;
+    overflow-x: hidden;
+    justify-self: flex-start;
+    background-color: transparent;
+    scroll-behavior: smooth;
+    border-radius: 25px;
+}
+.agent-icon-container{
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+  margin: 5px;
+  border-radius: 25px;
+  border: 2px solid #FA4454;
+}
+.agent-icon-container.selected {
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  border-radius: 25px;
+  border: 2px solid #531626;
+  background-color: rgba(250, 68, 84, 0.7);
+}
+.agent-display-icon {
+  width: 100%;
+}
+.left.arrow-button,.right.arrow-button {
+  font-size: 50px;
+  color: #FA4454;
+  background-color: transparent;
+  border: none;
+  height:200px;
+}
+
+.no-selected-agent{
+  font-family: 'CustomFont', sans-serif;
+  font-size: 36px;
+  color: rgb(214, 208, 208);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.agent-information-container { 
+  height:1000px;
+  width:1000px;
+  background-color: rgba(250, 68, 84, 0.9);
+  border-radius: 25px;
+  display: flex;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  transition: opacity 0.5s ease-in-out;
+  flex-direction: column;
+  align-self: center;
+}
+
+.portrait-description-wrapper{
+  display:flex;
+  gap: 1em;
+}
+
+.agent-portrait-container{
+  position: relative;
+  width: 1500px; 
+  height: 500px; 
+}
+
+.agent-background-container {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+ 
+}
+.agent-background-image{
+  height:100%;
+}
+.agent-bustPortrait-container {
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  
+}
+.agent-bustPortrait-image{
+  height:100%;
+}
+
+.agent-description-container{
+  display:flex;
+  flex-direction: column;
+}
+.agent-name{
+  font-family: 'CustomFont', sans-serif;
+  font-size: 75px;
+  color:#1A233C;
+  align-self: center;
+  margin-top:50px;
+  margin-right: 50px;
+  margin-bottom: 0;
+  font-weight: bold;
+  text-decoration: line-through;
+}
+.header{
+  font-family: 'CustomFont', sans-serif;
+  font-size:28px;
+  color:#1A233C;
+}
+.agent-description{
+  font-family: 'Tungsten-Bold',arial,georgia,sans-serif;
+  color:#1A233C;
+  margin-bottom: 30px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.role-wrapper{ 
+  display: flex;
+  flex-direction: row;
+}
+.role-display-name{
+  font-family: 'CustomFont', sans-serif;
+  color:#1A233C;
+  font-size:24px;
+}
+.role-icon-container{
+  height:30px;
+  width:30px;
+  justify-content: center;
+  margin-left: 10px;
+}
+.role-icon{
+  height: 100%;
+}
+.role-description{
+  font-family: 'Tungsten-Bold',arial,georgia,sans-serif;
+  color:#1A233C;
+  font-weight: bold;
+}
+.abilities-container{
+  display: flex;
+  flex-direction: column;
+}
+.abilities-header{
+  font-family: 'CustomFont', sans-serif;
+  color:#1A233C;
+  margin-left: 25px;
+}
+.ability-icon-wrapper{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.ability-icon-container{
+  height:100px;
+  width:100px;
+  color: white;
+}
+.ability-display-icon{
+  height: 100%;
+}
+.passive-ability{
+  font-size: 24px;
+  color: white;
+}
+.ability-description-container{
+  display:flex;
+  flex-direction: column;
+}
+.ability-name{
+  font-family: 'CustomFont', sans-serif;
+  color:#1A233C;
+  font-weight: bold;
+  text-align: center;
+}
+.ability-description{
+  font-family: 'Tungsten-Bold',arial,georgia,sans-serif;
+  color:#1A233C;
+  font-weight: bold;
+  margin-left: 25px;
+}

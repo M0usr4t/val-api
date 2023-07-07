@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../../fonts/ValorantFont.ttf') format('truetype');
+  }
+body, html {
+    background-color: #14171A;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("../../images/background.jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.arsenal-page {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.category-selection-container{
+    display: flex;
+    flex-direction: column;
+    width:15%;
+    height: 80%;
+    justify-content: flex-start;
+    background-color: rgba(14, 13, 13, 0.578);
+    border-radius: 10px;
+    margin:10px;
+}
+
+.category{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor: crosshair;
+}
+.category:hover{
+    background-color: rgba(250, 68, 83, 0.631);
+    border-radius: 10px;
+}
+.category-name{
+    color: white;
+}
+.chosen-category{
+    width: 100%;
+    max-height:80vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    justify-content: flex-start;
+}
+.gun-info-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(250, 68, 83, 0.631);
+    border-radius: 10px;
+    margin: 10px;
+    width:80%;
+}
+.gun-and-description{
+    display: flex;
+    width:100%;
+    justify-content: space-evenly;
+}
+.image-and-title{
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+}
+.gun-image{
+    max-height:70%;
+}
+.gun-title{
+    font-family: 'CustomFont', sans-serif;
+    font-size: 32px;
+    text-align: center;
+}
+.description{
+    font-family: 'Tungsten-Bold',arial,georgia,sans-serif;
+    background-color: rgba(14, 13, 13, 0.578);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white; 
+    margin: 10px;
+    border-radius: 10px;
+}
+.attribute{
+    margin:10px;
+}
+.attb-title{
+    font-weight: bold;
+    font-size: 90%;
+}
+.skins-button{
+    font-family: 'CustomFont', sans-serif;
+    color: white;
+    align-self: center;
+    margin: 10px;
+    background-color: rgba(14, 13, 13, 0.578);
+    border-radius: 10px;
+    cursor: crosshair;
+}
+.button-text{
+    margin: 3px;
+    align-self: center;
+    justify-self: center;
+}
+
+.skins-container{
+    display: flex;
+    height: 80%;
+    max-width: 100%;
+    overflow: hidden;
+    position: absolute;
+    align-self: center;
+    background-color: rgba(14, 13, 13, 0.578);
+    align-items: center;
+  }
+.skins-display-container{
+    display: flex;
+    overflow: hidden;
+    align-items:  center;
+    scroll-behavior: smooth;
+    border-radius: 25px;
+    height: 70%;
+}
+  .skin-image-container{
+    margin: 5px;
+    border-radius: 25px;
+    background-color: black;
+    height: 100%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .skin-name{
+    text-align: center;
+    color: white;
+  }
+  .skin-image {
+    width:100%;
+  }
+  .close-skins{
+    font-family: 'Tungsten-Bold',arial,georgia,sans-serif;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(250, 68, 83, 0.346);
+    border: 1px solid white; 
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: crosshair;
+  }
+  .left.arrow-button,.right.arrow-button {
+    font-size: 50px;
+    color: #FA4454;
+    background-color: transparent;
+    border: none;
+    height:100%;
+    text-align: center;
+    text-justify: center;
+  }
+  .chromas-container{
+    display: flex;
+    border-radius: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+ .chroma-image{
+    height: 70%;
+    border-radius: 10px;
+    border-color: #FA4454;
+    cursor: crosshair;
+ }
+ .chroma-image:hover{
+    height: 70%;
+    border-radius: 10px;
+    border: 2px solid #FA4454;
+    cursor: crosshair;
+ }
