@@ -177,10 +177,10 @@ body, html {
     height:100%;
     text-align: center;
     text-justify: center;
+    cursor: crosshair;
   }
   .chromas-container{
     display: flex;
-    border-radius: 10px;
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
@@ -188,12 +188,11 @@ body, html {
  .chroma-image{
     height: 70%;
     border-radius: 10px;
-    border-color: #FA4454;
-    cursor: crosshair;
  }
  .chroma-image:hover{
     height: 70%;
     border-radius: 10px;
-    border: 2px solid #FA4454;
+    border: 1px solid #FA4454;
     cursor: crosshair;
+    box-sizing: border-box;
  }
